@@ -22,19 +22,18 @@ submit.addEventListener("click", function() {
     }
 
     if (newBR) {
-        sqr.style.newBR = newBR + "px";
+        sqr.style.borderRadius = newBR + "px";
     }
 
     if (newColor) {
         sqr.style.backgroundColor = newColor;
-    
     }
 });
 
 btn.addEventListener("click", function() {
     sqr.style.width = defw;
     sqr.style.height = defh;
-    sqr.style.newBR = defBorderRadius;
+    sqr.style.borderRadius = defBorderRadius;
     sqr.style.backgroundColor = defColor;
 
     document.getElementById("w").value = "";

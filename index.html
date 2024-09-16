@@ -4,29 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Draw a Square</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <input type="text" id="w" placeholder="Enter Width">
+    <div class="container mt-5">
+    <h1>Draw Your Square!</h1>
+    <p>NOTE: Don't add px or % only numbers</p>
     <label for="w">Enter Width</label><br>
+    <input type="text" id="w" placeholder="Width">
 
-    <input type="text" id="h" placeholder="Enter Height">
     <label for="h">Enter Height</label><br>
+    <input type="text" id="h" placeholder="Height">
     
-    <input type="text" id="borderRadius" placeholder="Enter Border Radius">
     <label for="borderRadius">Enter Border Radius</label><br>
+    <input type="text" id="borderRadius" placeholder="Border Radius">
 
-    <input type="text" id="color" placeholder="Enter Square Color">
     <label for="color">Enter Square Color</label><br>
+    <input type="text" id="color" placeholder="Square Color">
 
     <button id="submit">Submit</button>
-    <button id="btn">Back to Old ver</button>
-
-    <div style="height: 100vh; width: 100vw;">
+    <button id="btn">Reset</button>
+</div>
+    <div class="container-fluid my-5 square-container">
     <div id="square">
         
     </div>
 </div>
     <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
